@@ -506,7 +506,7 @@ const students = {
                     code: "CS210",
                     subject: "THEORY OF COMPUTATION",
                     units: 3,
-                    grade: "c",
+                    grade: "C",
                     cumulativeUnits: 49,
                     cgpa: "6.34"
                 },
