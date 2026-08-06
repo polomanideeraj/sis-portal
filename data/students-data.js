@@ -370,7 +370,7 @@ const students = {
                     units: 3,
                     grade: "B+",
                     cumulativeUnits: 25,
-                    cgpa: "6.54"
+                    cgpa: "5.78"
                 },
 
                 {
@@ -380,7 +380,7 @@ const students = {
                     units: 4,
                     grade: "B+",
                     cumulativeUnits: 25,
-                    cgpa: "6.54"
+                    cgpa: "5.78"
                 },
 
                 {
@@ -390,7 +390,7 @@ const students = {
                     units: 3,
                     grade: "B",
                     cumulativeUnits: 25,
-                    cgpa: "6.54"
+                    cgpa: "5.78"
                 },
 
                 {
@@ -400,7 +400,7 @@ const students = {
                     units: 3,
                     grade: "A",
                     cumulativeUnits: 25,
-                    cgpa: "6.54"
+                    cgpa: "5.78"
                 },
                  {
                     year: "2025-2026",
@@ -409,7 +409,7 @@ const students = {
                     units: 4,
                     grade: "B",
                     cumulativeUnits: 25,
-                    cgpa: "6.54"
+                    cgpa: "5.78"
                 },
                  {
                     year: "2025-2026",
@@ -418,7 +418,7 @@ const students = {
                     units: 4,
                     grade: "B",
                     cumulativeUnits: 25,
-                    cgpa: "6.54"
+                    cgpa: "5.78"
                 },
                  {
                     year: "2025-2026",
@@ -427,7 +427,7 @@ const students = {
                     units: 1,
                     grade: "B",
                     cumulativeUnits: 25,
-                    cgpa: "6.54"
+                    cgpa: "5.78"
                 },
                  {
                     year: "2025-2026",
@@ -436,7 +436,7 @@ const students = {
                     units: 3,
                     grade: "B",
                     cumulativeUnits: 25,
-                    cgpa: "6.54"
+                    cgpa: "5.78"
                 },
             
 
