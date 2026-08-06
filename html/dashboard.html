@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Student Information System</title>
+
+    <link rel="stylesheet"
+          href="../css/dashboard.css">
+
+    <link rel="stylesheet"
+          href="../css/responsive.css">
+
+</head>
+
+<body>
+
+    <!-- ================= TOP HEADER ================= -->
+
+    <header class="topbar">
+
+        <div class="left-section">
+
+            <button id="menuBtn">
+
+                &#9776;
+
+            </button>
+
+            <img src="../images/logo.png"
+                 class="logo"
+                 alt="College Logo">
+
+            <div class="college-name">
+
+                <h2>
+
+                    ICFAI Foundation for Higher Education
+
+                </h2>
+
+                <small>
+
+                    Student Information System
+
+                </small>
+
+            </div>
+
+        </div>
+
+        <div class="right-section">
+
+            <div class="student-short-info">
+
+                <div class="student-text">
+
+                    <h4 id="studentName">
+
+                        Student Name
+
+                    </h4>
+
+                    <span id="studentEnroll">
+
+                        Enrollment Number
+
+                    </span>
+
+                </div>
+
+                <img id="topProfileImage"
+                     class="top-photo"
+                     src=""
+                     alt="Student">
+
+            </div>
+
+            <button id="profileBtn"
+                    class="arrow-btn">
+
+                ▼
+
+            </button>
+
+            <button id="logoutBtn"
+                    class="logout-btn">
+
+                ⏻
+
+            </button>
+
+        </div>
+
+    </header>
+
+    <!-- ================= SIDEBAR ================= -->
+
+    <aside class="sidebar"
+           id="sidebar">
+<ul>
+
+    <li id="dashboardLink">
+
+        Dashboard
+
+    </li>
+
+    <li>Documents</li>
+
+    <li>Announcements</li>
+
+    <li>Notice Board</li>
+
+    <li>Feedback</li>
+
+            <li>My Info</li>
+
+            <li>Bank Loan</li>
+
+            <li>Fee</li>
+
+            <li class="academics-title">
+
+                Academics
+
+                <ul class="sub-menu">
+
+                    <li id="attendanceLink">
+
+                        Attendance
+
+                    </li>
+
+                    <li id="gradeLink">
+
+                        Grade List
+
+                    </li>
+
+                </ul>
+
+            </li>
+
+            <li>Hall Ticket</li>
+
+            <li>Examinations</li>
+
+            <li>Help Desk</li>
+
+            <li>Activities</li>
+
+            <li>Resources</li>
+
+            <li>Downloads</li>
+
+            <li>Library</li>
+
+            <li>IIC</li>
+
+            <li>Change Password</li>
+
+        </ul>
+
+    </aside>
+
+    <!-- ================= MAIN CONTENT ================= -->
+
+    <main class="dashboard">
+
+        <div class="dashboard-content">
+                        <section id="dashboardHome" class="page-section active-page">
+
+                <div class="welcome-card">
+
+                    <div class="welcome-left">
+
+                        <h1>
+
+                            Welcome,
+
+                            <span id="welcomeName">
+
+                                Student
+
+                            </span>
+
+                        </h1>
+
+                        <p>
+
+                            Welcome to the Student Information System.
+
+                        </p>
+
+                    </div>
+
+                </div>
+                    </section>
+                
+
+            <!-- ================= ATTENDANCE ================= -->
+
+            <section id="attendanceSection"
+                     class="page-section"
+                     style="display:none;">
+
+                    <h2>
+
+                    
+                        Attendance Details
+
+                    </h2>
+
+             <div class="semester-info">
+
+                    <span class="semester-title">
+
+                        Semester V
+
+                    </span>
+
+                </div>
+
+                <table class="attendance-table">
+
+                    <thead>
+
+    <tr>
+
+        <th>S#</th>
+        <th>Subject</th>
+        <th>Section</th>
+        <th>Sessions</th>
+        <th>Attended</th>
+        <th>Attendance (%)</th>
+
+    </tr>
+
+</thead>
+
+                    <tbody id="attendanceTable">
+
+                    </tbody>
+
+                </table>
+
+            </section>
+
+            <!-- ================= GRADE LIST ================= -->
+
+            <section id="gradeSection"
+                     class="page-section"
+                     style="display:none;">
+
+                <h2>
+
+                    Grade List
+
+                </h2>
+
+                <div class="semester-box">
+
+                    <label>
+
+                        Semester
+
+                    </label>
+
+                    <select id="semesterSelect">
+
+                    </select>
+
+                </div>
+                <div class="grade-summary">
+
+
+
+</div>
+<div class="grade-summary">
+    <p><strong>Year:</strong> <span id="Year"></span></p>
+    <p><strong>Semester:</strong> <span id="Semester"></span></p>
+</div>
+                <table class="grade-table">
+                    
+
+                    <thead>
+
+                       <tr>
+        <th>Course</th>
+        <th>Units</th>
+        <th>Grade</th>
+        <th>Cum. Units</th>
+        <th>CGPA</th>
+    </tr>
+
+                    </thead>
+
+                    <tbody id="gradeTable">
+
+                    </tbody>
+
+                </table>
+
+            </section>
+                    </div>
+
+    </main>
+
+    <!-- ================= PROFILE PANEL ================= -->
+
+    <div class="profile-panel"
+         id="profilePanel">
+
+        <div class="profile-header">
+
+            <h3>
+
+                Student Profile
+
+            </h3>
+
+        </div>
+
+        <img id="profileImage"
+             src=""
+             alt="Student">
+
+        <h2 id="profileName">
+
+            Student Name
+
+        </h2>
+
+        <p>
+
+            <strong>Enrollment No:</strong>
+
+            <span id="profileEnrollment">
+
+            </span>
+
+        </p>
+
+        <p>
+
+            <strong>Program:</strong>
+
+            <span id="profileProgram">
+
+                B.Tech
+
+            </span>
+
+        </p>
+
+        <p>
+
+            <strong>Department:</strong>
+
+            <span id="profileDepartment">
+
+                Computer Science & Engineering
+
+            </span>
+
+        </p>
+
+        
+    </div>
+
+    <!-- ================= JAVASCRIPT ================= -->
+
+    <script src="../data/students-data.js"></script>
+
+    <script src="../js/common.js"></script>
+
+    <script src="../js/sidebar.js"></script>
+
+    <script src="../js/profile-panel.js"></script>
+
+    <script src="../js/logout.js"></script>
+
+    <script src="../js/dashboard.js"></script>
+    <script src="../js/attendance.js"></script>
+<script src="../js/grade-list.js"></script>
+
+</body>
+
+</html>

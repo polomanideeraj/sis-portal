@@ -1,0 +1,108 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#edf3fb;
+    padding:40px;
+}
+.container{
+    max-width:900px;
+    margin:auto;
+    background:#ffffff;
+    padding:30px;
+    border-radius:8px;
+    box-shadow:0 2px 10px rgba(0,0,0,.1);
+}
+
+h2{
+    color:#0b4c92;
+    margin-bottom:25px;
+}
+
+.semester-box{
+    margin-bottom:20px;
+}
+
+.semester-box label{
+    display:block;
+    margin-bottom:8px;
+    font-weight:bold;
+    color:#0b4c92;
+}
+
+.semester-box select{
+    width:260px;
+    height:42px;
+    padding:0 12px;
+    border:1px solid #bfcddd;
+    border-radius:6px;
+    outline:none;
+    background:#fff;
+}
+table{
+    width:100%;
+    border-collapse:collapse;
+    margin-top:20px;
+overflow-x:auto;
+display:block;
+}
+
+table th{
+    background:#0b4c92;
+    color:white;
+    padding:12px;
+    border:1px solid #dddddd;
+}
+
+table td{
+    padding:10px;
+    border:1px solid #dddddd;
+    text-align:center;
+    font-size:14px;
+}
+
+tr:nth-child(even){
+    background:#f8f8f8;
+}
+
+.back-btn{
+    margin-top:25px;
+    background:#0b4c92;
+    color:white;
+    border:none;
+    padding:12px 25px;
+    border-radius:5px;
+    cursor:pointer;
+    font-size:15px;
+}
+
+.back-btn:hover{
+    background:#083b72;
+}
+
+@media(max-width:768px){
+
+body{
+    padding:15px;
+}
+
+.container{
+    padding:20px;
+}
+
+table{
+    font-size:14px;
+}
+
+.semester-box select{
+    width:100%;
+}
+
+.back-btn{
+    width:100%;
+}
+}

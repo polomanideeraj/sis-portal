@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grade List</title>
+
+    <link rel="stylesheet" href="../css/grade-list.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h2>Grade List</h2>
+
+        <div class="semester-box">
+            <label>Semester</label>
+            <select id="semesterSelect"></select>
+        </div>
+
+        <div class="grade-summary"> 
+            <p><strong>Year:</strong> <span id="Year"></span></p>
+            <p><strong>Semester:</strong> <span id="Semester"></span></p>
+        </div>
+
+        <table class="grade-table">
+
+            <thead>
+                <tr>
+                    <th>Course</th>
+                    <th>Units</th>
+                    <th>Grade</th>
+                    <th>Cum. Units</th>
+                    <th>CGPA</th>
+                </tr>
+            </thead>
+
+            <tbody id="gradeTable">
+            </tbody>
+
+        </table>
+
+        <button class="back-btn" onclick="window.location.href='dashboard.html'">
+            Back to Dashboard
+        </button>
+
+    </div>
+
+    <script src="../data/students-data.js"></script>
+    <script src="../js/common.js"></script>
+    <script src="../js/grade-list.js"></script>
+
+</body>
+
+</html>

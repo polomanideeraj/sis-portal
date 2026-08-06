@@ -1,0 +1,108 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#edf3fb;
+    padding:40px;
+}
+
+.container{
+    max-width:900px;
+    margin:auto;
+    background:#ffffff;
+    padding:30px;
+    border-radius:8px;
+    box-shadow:0 2px 10px rgba(0,0,0,.1);
+}
+
+h2{
+    color:#0b4c92;
+    margin-bottom:25px;
+}
+
+.semester-box{
+    margin-bottom:20px;
+}
+
+.semester-box label{
+    display:block;
+    margin-bottom:8px;
+    font-weight:bold;
+}
+
+.semester-info{
+    margin-bottom:20px;
+}
+
+.semester-title{
+    display:inline-block;
+    background:#0b4c92;
+    color:#fff;
+    padding:10px 20px;
+    border-radius:6px;
+    font-size:16px;
+    font-weight:bold;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    margin-top:20px;
+}
+
+table th{
+    background:#0b4c92;
+    color:#ffffff;
+    padding:12px;
+    border:1px solid #dddddd;
+}
+
+table td{
+    padding:12px;
+    border:1px solid #dddddd;
+    text-align:center;
+}
+
+tr:nth-child(even){
+    background:#f8f8f8;
+}
+
+.back-btn{
+    margin-top:25px;
+    background:#0b4c92;
+    color:#ffffff;
+    border:none;
+    padding:12px 25px;
+    border-radius:6px;
+    cursor:pointer;
+    font-size:15px;
+    font-weight:600;
+}
+
+.back-btn:hover{
+    background:#083b72;
+}
+
+@media(max-width:768px){
+
+body{
+    padding:15px;
+}
+
+.container{
+    padding:20px;
+}
+
+table{
+    font-size:14px;
+}
+
+.back-btn{
+    width:100%;
+}
+
+}
